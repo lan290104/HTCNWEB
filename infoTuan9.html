@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin người dùng</title>
+</head>
+<body>
+    <h1>Thông tin đăng nhập</h1>
+    <table border="1" width="400">
+        <tr>
+            <th colspan="2">Thông tin đã nhập</th>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td id="us">AAAA</td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td id="pw">BBBB</td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td id="gen">DDDD</td>
+        </tr>
+        <tr>
+            <td>Cafe đã chọn</td>
+            <td id="cf">CCCC</td>
+        </tr>
+    </table>
+    <script>
+        var username = localStorage.getItem("us");
+        var password  = localStorage.getItem("pd");
+        var cafe  = localStorage.getItem("cf");
+        var gender  = localStorage.getItem("gt");
+        document.getElementBYId("us").innerHTML = username;
+        document.getElementBYId("pw").innerHTML = password;
+        document.getElementBYId("cf").innerHTML = cafe;
+        document.getElementBYId("gen").innerHTML = gender;
+    </script>
+</body>
+</html>
